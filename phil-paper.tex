@@ -19,19 +19,18 @@
 %% 
 %\documentclass{lps}
 \documentclass[a4paper]{article}
-%%
-%% User's packages:
-%% \usepackage[italian]{babel}          % for Italian language
-%% \usepackage[ansinew]{inputenc}   % to insert special symbols on Windows systems
-%% \usepackage[T1]{fontenc}            % standard encoding on Windows systems
+
 \usepackage{lipsum}                   % to test this template
+%\usepackage[numbers,sort&compress]{natbib} %bib with automatic name and year
+\usepackage[round]{natbib} %bib with automatic name and year
+\usepackage[utf8]{inputenc} % support umlaut characters
 
 \begin{document}
 %% Article's information:
-\title{Title of the article}
+\title{TITLE}
 %% Author's information:
-\author{John First\\Department of Philosophy\\University of Trieste (Italy)\\j.first@mail.it \and%
-            James Second\\Department of Philosophy\\University of Trieste (Italy)\\j.second@mail.it}
+\author{Jake Atwell\\Freie Universität Berlin\\jake.atwell@gmail.com}
+\date{September 26, 2018}
 %\shortauthor{John First, James Second}
 %% Issue's information:
 %%\Volume{}
@@ -525,11 +524,17 @@ eliminated}
 
 
 
+\cleardoublepage
+\bibliography{mybib}
+\bibliographystyle{plainnat}
+%\bibliographystyle{ieeetr}
+%\bibliographystyle{detailed}
 
-\begin{thebibliography}{AAA}
-\bibitem{mypaper} \textsc{First, J.} and \textsc{Second, J.} (2010), ``An interesting paper'', \emph{A Famous Journal}, 1, pp.~1--11.
-\bibitem{mybook} \textsc{First, J.} and \textsc{Second, J.} (2011), \emph{A great book}, Address: Publisher.
-\end{thebibliography}
+%\begin{thebibliography}{AAA}
+%\bibitem{mypaper} \textsc{First, J.} and \textsc{Second, J.} (2010), ``An interesting paper'', \emph{A Famous Journal}, 1, pp.~1--11.
+%\bibitem{mybook} \textsc{First, J.} and \textsc{Second, J.} (2011), \emph{A great book}, Address: Publisher.
+%\end{thebibliography}
+
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \par
